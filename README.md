@@ -10,4 +10,10 @@ This workshop will be taught by [Caspar van Lissa](https://github.com/cjvanlissa
 
 
 ## Workshop dates
-- Thursday 9 July 2020 - 10:00-12:00 (registration link coming soon)
+- Thursday 9 July 2020 - 10:00-12:00 (registration link coming soon)  
+  *Office hours for installation support:*
+  - Tuesday 7 July, 11:00
+  - Wednesday 8 July, 9:00
+
+## Preparation
+Work through the [Setup vignette: Setting up your computer for WORCS](https://cjvanlissa.github.io/worcs/articles/setup.html).
