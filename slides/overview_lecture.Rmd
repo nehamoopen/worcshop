@@ -1,0 +1,256 @@
+---
+title: "Writing a Reproducible Paper with WORCS"
+author: "Caspar J. van Lissa"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, 'custom.css']
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+![reproducibility](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+
+---
+# The philosophy of WORCS
+
+
+
+---
+# The philosophy of WORCS
+
+
+
+
+---
+# The philosophy of WORCS
+
+
+
+
+---
+# The philosophy of WORCS
+
+
+
+
+---
+# The philosophy of WORCS
+
+
+
+
+---
+# Dynamic documents
+
+
+
+---
+# Dynamic documents
+
+
+
+---
+# Dynamic documents and WORCS
+
+
+
+
+---
+# Dynamic documents and WORCS
+
+
+
+---
+# Version control
+
+#### Why do you need version control?
+
+.pull-left[
+
+- It will help you manage ~~your code~~ most of your files (it is like track changes on steroids: it applies to all files in a folder).
+
+- It allows you to trace back your steps: if something breaks, you can figure out what happened.
+
+- NO MORE thesis_final_final_SERIOUSLYFINAL.Rmd
+
+even better:
+- a good version control system allows you to collaborate and share!
+
+- a good version control system facilitates experimentation!
+
+]
+
+.pull-right[
+![final](http://www.phdcomics.com/comics/archive/phd101212s.gif)
+]
+---
+# Version control
+
+.pull-left-larger[
+### What is git?
+- Distributed Version Control system written by Linus Torvalds (of Linux fame)
+
+- Allows you to log updates, branch your work (so you can experiment without losing the original!), and keep all backups, while efficiently using your storage
+
+- Gives user a lot of control on what to track, and adds a narrative to changes ('commit comments')
+
+- Current standard for code
+
+- Open Source software written for the command line...
+
+- ... but many GUI-clients exist nowadays, and most coding IDEs have built-in git.]
+.pull-right-smaller[
+#![git-logo](images/git-logo-small.svg)
+![distributed](images/screenshots/distributed.png)
+
+![git](https://imgs.xkcd.com/comics/git.png)
+]
+
+
+---
+# Version control
+
+# How does git work
+
+1. Add the changed file(s) to the staging area, and commit the changes:
+```bash
+git add src/filename.py anotherfile.txt
+git add config/configfile.json
+git commit -m "My commit message"
+```
+OR
+
+2. commit files directly, without staging:
+```bash
+git commit src/filename.py anotherfile.txt -m "My commit message"
+```
+
+NB: don't forget your commit message (try what happens if you do!).
+![repo](images/swcarpentry/git-staging-area.svg)
+.footnote[
+Image credit:<br />
+Software Carpentries
+]
+
+
+---
+# Enjoy, and git responsibly!
+
+- Commits should be atomic: comprehensive 'units' of changes.
+  - **DO**: edit/add an .svg and add it to your .Rmd presentation in the same commit
+  - **DON'T**: edit for a full day and put this in a single commit (or worse: forget to...)
+
+- Commits should have informative messages so you (and others) can trace your steps
+
+  ![git_commit](https://imgs.xkcd.com/comics/git_commit.png)
+
+- Track most files; .gitignore those files you don't.
+
+- Explore new ideas with branches, keep a stable version on `master`
+
+
+---
+# Do you want to learn more?
+
+- A [Software Carpentry course on git](https://swcarpentry.github.io/git-novice/)
+
+- A [version control + git tutorial](https://www.atlassian.com/git/tutorials/what-is-version-control) on Atlassian
+
+- A [git cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet) from Atlassian
+
+- A book with [all the ins and outs of git](https://www.git-scm.com/book/en/v2) from the git website
+
+![atlassian](images/atlassian/bubblediag.svg)
+
+---
+# Version control and WORCS
+
+
+
+
+---
+# Version control and WORCS
+
+
+
+
+---
+# Dependency management
+
+
+
+
+---
+# Dependency management
+
+
+
+
+---
+# Dependency management
+
+
+
+
+---
+# Dependency management and WORCS
+
+
+
+---
+# Dependency management and WORCS
+
+
+
+
+---
+# Tying it together: the `worc`flow
+
+
+
+
+---
+# Tying it together: the `worc`flow 
+
+
+
+
+
+---
+# Tying it together: the `worc`flow 
+
+
+
+
+
+
+---
+# Tying it together: the `worc`flow 
+
+
+
+
+
+
+---
+# Tying it together: the `worc`flow 
+
+
+
+
+
+
+---
+class: center, inverse, middle
+
+# Thank you
+
+
+
+
