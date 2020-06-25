@@ -10,30 +10,55 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-class: clear
-
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
+# Open science as a paradigm shift
+
+Open Science creates opportunities to make science
+- more reliable, 
+- more collaborative, 
+- more inclusive,
+- more...
+
+---
+class: clear
 background-image: url(https://the-turing-way.netlify.app/_images/reproducibility.jpg)
 background-size: contain
 
 
 .footnote-bg[
 (Artwork by Scriberia for [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction), CC-BY)]
+
+---
+# Open science as a challenge?
+
+It is a motivating goal, but often requires new familiarities and skills:
+- new platforms
+- new attributes
+- new tools
+- new...
+
 ---
 # The philosophy of WORCS
 
 - YES to open
 - YES to reproducible
-- YES to best practices
+- YES to best practices...
 
+--
 
-### But doable and attainable
+### But achievable.
 
+--
+
+![learningcurve](images/learningcurve.svg)
+
+.footnote[Pulling down the learning curve!]
 ---
 # The philosophy of WORCS
+
 
 
 
@@ -221,14 +246,16 @@ Software Carpentries
 ---
 # Tying it together: the `worc`flow
 
-![overview](images/worcs_viz.svg)
+![overview](images/worcs_viz.png)
 
 
 
 ---
-# Tying it together: the `worc`flow 
+class:inverse, clear
 
-![workflow](https://raw.githubusercontent.com/cjvanlissa/worcs/master/paper/workflow_graph/workflow.png)
+background-image: url(https://raw.githubusercontent.com/cjvanlissa/worcs/master/paper/workflow_graph/workflow.png)
+background-size: contain
+
 
 
 
