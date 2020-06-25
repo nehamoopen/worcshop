@@ -10,16 +10,27 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+class: clear
+
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
-![reproducibility](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+background-image: url(https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+background-size: contain
 
+
+.footnote-bg[
+(Artwork by Scriberia for [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction), CC-BY)]
 ---
 # The philosophy of WORCS
 
+- YES to open
+- YES to reproducible
+- YES to best practices
 
+
+### But doable and attainable
 
 ---
 # The philosophy of WORCS
@@ -207,16 +218,17 @@ Software Carpentries
 # Dependency management and WORCS
 
 
-
-
 ---
 # Tying it together: the `worc`flow
 
+![overview](images/worcs_viz.svg)
 
 
 
 ---
 # Tying it together: the `worc`flow 
+
+![workflow](https://raw.githubusercontent.com/cjvanlissa/worcs/master/paper/workflow_graph/workflow.png)
 
 
 
