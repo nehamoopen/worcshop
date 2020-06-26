@@ -17,3 +17,7 @@ This workshop will be taught by [Caspar van Lissa](https://github.com/cjvanlissa
 
 ## Preparation
 Work through the [Setup vignette: Setting up your computer for WORCS](https://cjvanlissa.github.io/worcs/articles/setup.html).
+
+
+## Presentations
+[26 June 2020 - Lakens lab](https://bvreede.github.io/worcshop/slides/overview_lecture.html)
