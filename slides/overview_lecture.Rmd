@@ -85,9 +85,9 @@ It is a motivating goal, but often requires new familiarities and skills:
 background-image: url(images/worcs_badge.png)
 background-size: 30% 40%
 background-position: right top
-# The practice of WORCS
+# WORCS in practice
 
-- Implemented for R users in an R package [`worcs`](https://github.com/cjvanlissa/worcs)
+- Implemented for R (Studio) users in an R package [`worcs`](https://github.com/cjvanlissa/worcs)
 
 --
 
@@ -109,31 +109,56 @@ background-position: right top
   - Dependency management
 
 ---
+background-image: url(https://rstudio.com/wp-content/uploads/2014/04/rmarkdown.png)
+background-size: 20% 38%
+background-position: right top
+
 # Dynamic document
 
-Combining narrative with code
-Automatically generates figures and tables
-Automatically renders results in text
-Formatting options into 
-Writing scientific reports in a format that interleaves written reports with blocks
-99 of code used to conduct the analyses. The text is automatically formatted as a scientific
-100 paper in several potential styles. When the text is formatted, the code blocks are evaluated
-101 and their results are insterted in the text, or rendered as figures and tables.
+- Combining narrative with code
+
+- Automatically generates figures and tables
+
+- Automatically renders results in text
+
+- Formatting into scientific paper (including citations!)
+
+
+#### Implementation in `worcs`
+- `R Markdown`  
+  _a commonly used package that combines text in Markdown with code in R_
+- `papaja` (Preparing APA Journal Articles)  
+  _an R package that helps produce complete APA manuscripts from R Markdown-files._
 
 ---
-# Dynamic documents
+# R Markdown
 
-
-
----
-# Dynamic documents and WORCS
-
-
-
+![rmarkdown](images/rmarkdown_example.png)
 
 ---
-# Dynamic documents and WORCS
+# Citation in Markdown
 
+`cite_r("r-references.bib")` (a `papaja` function) cites all packages used:
+
+![data-analysis](images/markdown_analysis.png)
+![citation](images/markdown_citation.png)
+
+---
+# Return on investment?
+
+### User needs to spend time learning:
+
+- Markdown language itself;
+- All analyses and plotting in R.
+
+--
+
+### But this is time well spent:
+
+- No more painstakingly copy-pasting output and manually formatting text;
+- Eliminate human error in manually copying results is eliminated;
+- With (major) revisions, all results are automatically updated;
+- Integration of reproducibility: reviewers/readers can easily verify the results by re-compiling the document.
 
 
 ---
