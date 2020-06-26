@@ -109,6 +109,11 @@ background-position: right top
   - Dependency management
 
 ---
+background-image: url(images/worcs_viz.png)
+background-size: contain
+# A `worcs` project summary
+
+---
 background-image: url(https://rstudio.com/wp-content/uploads/2014/04/rmarkdown.png)
 background-size: 20% 38%
 background-position: right top
@@ -283,66 +288,60 @@ background-position: right top
 # Dependency management in WORCS
 
 - `renv`, by Kevin Ushey at RStudio
+
 - maintains a text-based, human-readable log of:
   - all packages
   - their version number
   - their source (e.g., “CRAN”, “Bioconductor”, “GitHub”)
+  
 - Lightweight solution, which can itself be version-controlled with Git;
-- User 
+
+- When a user loads the project, `renv` installs its dependencies.
 
 #### Note:
-Sustainable archiving of dependencies at their respective sources is required.
-
-
----
-# Dependency management and WORCS
-
-
+Sustainable archiving of dependencies at their respective sources is required!
 
 ---
-# Dependency management and WORCS
+# (FAIR) Data in WORCS
 
+- `worcs` contains a dedicated script for data preparation (`prepare_data.R`)
+- Aimed at generating a clean `.csv` for analysis.
+
+#### If the script ends with `open_data()`:
+- Clean `.csv` file of the data is added to the repository and tracked by Git.
+
+#### If the script ends with `closed_data()`:
+- A clean `.csv` file of the data is saved locally;
+- A simulated dataset is added to the repository and tracked by Git.
+
+#### Always
+- A codebook of the data is created and tracked by Git.
 
 ---
-# Tying it together: the `worc`flow
+# Sharing data safely
 
-![overview](images/worcs_viz.png)
+- ONLY the cleaned (syntetic) data is tracked by Git, and stored on GitHub!
 
+- Other `.xlsx`, `.csv`, `.sav` files are ignored by Git.
+
+- An explicit choice for `open_data()` or `closed_data()` is needed, before the data is recorded at all!
+
+- Reading the data in a `worcs` project is done with `load_data()`:
+  - If the original `data.csv` is present, this file is read (on the author's system)
+  - If a user copied the repository, `synthetic_data.csv` is read instead.
+
+---
+# Open Science Framework (OSF)
+
+- The WORCS workflow invites [connecting the GitHub repository to OSF](https://help.osf.io/hc/en-us/articles/360019929813-Connect-GitHub-to-a-Project), streamlining the archiving of a project
+
+- A manuscript, once rendered, can be uploaded directly as a pre-print.
 
 
 ---
 class:inverse, clear
-
 background-image: url(https://raw.githubusercontent.com/cjvanlissa/worcs/master/paper/workflow_graph/workflow.png)
 background-size: contain
-
-
-
-
-
-
----
-# Tying it together: the `worc`flow 
-
-
-
-
-
-
----
-# Tying it together: the `worc`flow 
-
-
-
-
-
-
----
-# Tying it together: tdhe `worc`flow 
-
-
-
-
 
 
 ---
