@@ -43,7 +43,8 @@ a, a > code {
 
 /* IMAGES */
 img[alt=learningcurve] {height: 250px; margin: 0 150px;}
-img[alt=reproducibility] {height: 350px; margin: 0 150px;}
+img[alt=final] {margin: -40px 0;}
+img[alt=git] {margin: -40px 50px;}
 
 
 .large-left-column {
