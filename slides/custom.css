@@ -42,7 +42,8 @@ a, a > code {
 }
 
 /* IMAGES */
-img[alt=learningcurve] {height: 300px; margin: 0 150px;}
+img[alt=learningcurve] {height: 250px; margin: 0 150px;}
+img[alt=reproducibility] {height: 350px; margin: 0 150px;}
 
 
 .large-left-column {

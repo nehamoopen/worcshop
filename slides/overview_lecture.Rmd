@@ -10,23 +10,20 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+background-image: url("https://the-turing-way.netlify.app/_images/reproducibility.jpg")
+background-size: 82% 82%
+
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
 # Open science as a paradigm shift
 
-Open Science creates opportunities to make science
+#### Open Science creates opportunities to make science
 - more reliable, 
 - more collaborative, 
 - more inclusive,
 - more...
-
----
-class: clear
-background-image: url(https://the-turing-way.netlify.app/_images/reproducibility.jpg)
-background-size: contain
-
 
 .footnote-bg[
 (Artwork by Scriberia for [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction), CC-BY)]
@@ -56,15 +53,16 @@ It is a motivating goal, but often requires new familiarities and skills:
 .footnote[[Nosek _et al._, 2015](https://osf.io/9f6gx/#!)]
 
 ---
-# The philosophy of WORCS
+# Introducing WORCS
 
+### A **W**orkflow for **O**pen **R**eproducible **C**ode in **S**cience
 - YES to open
 - YES to reproducible
 - YES to best practices...
 
 --
 
-### But achievable.
+### But attainable!
 
 --
 
@@ -83,48 +81,44 @@ It is a motivating goal, but often requires new familiarities and skills:
 1. **Pre-registration** of the analysis plan;
 1. _Replication of published results._
 
-#### Except one...
-
 ---
-# The philosophy of WORCS
+background-image: url(images/worcs_badge.png)
+background-size: 30% 40%
+background-position: right top
+# The practice of WORCS
 
 - Implemented for R users in an R package [`worcs`](https://github.com/cjvanlissa/worcs)
 
+--
+
 - Lightweight, flexible, streamlined
   
+--
+
 - Facilitates:
   - Comprehensive citation
   - Pre-registration
   - Sharing (synthetic) data
   - Pre-print submission
+
+--
   
-- Works with best practices:
+- Works with best (coding) practices:
   - Dynamic document generation
   - Version control with git
   - Dependency management
 
 ---
-# The philosophy of WORCS
+# Dynamic document
 
-
-
-
----
-# The philosophy of WORCS
-
-
-
-
----
-# The philosophy of WORCS
-
-
-
-
----
-# Dynamic documents
-
-
+Combining narrative with code
+Automatically generates figures and tables
+Automatically renders results in text
+Formatting options into 
+Writing scientific reports in a format that interleaves written reports with blocks
+99 of code used to conduct the analyses. The text is automatically formatted as a scientific
+100 paper in several potential styles. When the text is formatted, the code blocks are evaluated
+101 and their results are insterted in the text, or rendered as figures and tables.
 
 ---
 # Dynamic documents
