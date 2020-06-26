@@ -40,6 +40,21 @@ It is a motivating goal, but often requires new familiarities and skills:
 - new tools
 - new...
 
+--
+
+#### TOP guidelines for Open Science: comprehensive, yet broad standards
+
+1. **Citation** of literature, data, materials, and methods;
+1. **Sharing** data;
+1. **Sharing** the code required to reproduce analyses;
+1. **Sharing** new research materials;
+1. **Sharing** details of the design and analysis;
+1. **Pre-registration** of studies before data collection;
+1. **Pre-registration** of the analysis plan;
+1. **Replication** of published results.
+
+.footnote[[Nosek _et al._, 2015](https://osf.io/9f6gx/#!)]
+
 ---
 # The philosophy of WORCS
 
@@ -57,11 +72,36 @@ It is a motivating goal, but often requires new familiarities and skills:
 
 .footnote[Pulling down the learning curve!]
 ---
+# Facilitates meeting TOP guidelines
+
+1. **Citation** of literature, data, materials, and methods;
+1. **Sharing** data;
+1. **Sharing** the code required to reproduce analyses;
+1. **Sharing** new research materials;
+1. **Sharing** details of the design and analysis;
+1. **Pre-registration** of studies before data collection;
+1. **Pre-registration** of the analysis plan;
+1. _Replication of published results._
+
+#### Except one...
+
+---
 # The philosophy of WORCS
 
+- Implemented for R users in an R package [`worcs`](https://github.com/cjvanlissa/worcs)
 
-
-
+- Lightweight, flexible, streamlined
+  
+- Facilitates:
+  - Comprehensive citation
+  - Pre-registration
+  - Sharing (synthetic) data
+  - Pre-print submission
+  
+- Works with best practices:
+  - Dynamic document generation
+  - Version control with git
+  - Dependency management
 
 ---
 # The philosophy of WORCS
