@@ -277,9 +277,21 @@ Instead, dependencies are carefully chosen: excellently performing implementatio
 
 
 ---
-# Dependency management
+background-image: url(https://rstudio.github.io/renv/reference/figures/logo.svg)
+background-size: 20% 38%
+background-position: right top
+# Dependency management in WORCS
 
+- `renv`, by Kevin Ushey at RStudio
+- maintains a text-based, human-readable log of:
+  - all packages
+  - their version number
+  - their source (e.g., “CRAN”, “Bioconductor”, “GitHub”)
+- Lightweight solution, which can itself be version-controlled with Git;
+- User 
 
+#### Note:
+Sustainable archiving of dependencies at their respective sources is required.
 
 
 ---
@@ -326,7 +338,7 @@ background-size: contain
 
 
 ---
-# Tying it together: the `worc`flow 
+# Tying it together: tdhe `worc`flow 
 
 
 
@@ -336,7 +348,7 @@ background-size: contain
 ---
 class: center, inverse, middle
 
-# Thank you
+# Thank you!
 
 
 
