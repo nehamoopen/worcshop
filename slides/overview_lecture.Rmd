@@ -1,6 +1,6 @@
 ---
 title: "Writing a Reproducible Paper with WORCS"
-author: "Caspar J. van Lissa"
+author: "Barbara Vreede & Caspar J. van Lissa"
 output:
   xaringan::moon_reader:
     css: [default, metropolis, metropolis-fonts, 'custom.css']
@@ -80,6 +80,18 @@ It is a motivating goal, but often requires new familiarities and skills:
 1. **Pre-registration** of studies before data collection;
 1. **Pre-registration** of the analysis plan;
 1. _Replication of published results._
+
+## ...in a FAIR manner
+
+* **F**indable data etc.
+* **A**ccessible online for humans and machines
+* **I**nteroperable: Everything in an easy-to-adapt format
+* **R**eusability; people can use your data, your code, your materials in cloned projects
+
+---
+class:inverse, clear
+background-image: url(https://raw.githubusercontent.com/cjvanlissa/worcs/master/paper/workflow_graph/workflow.png)
+background-size: contain
 
 ---
 background-image: url(images/worcs_badge.png)
