@@ -10,10 +10,11 @@ This workshop will be taught by [Caspar van Lissa](https://github.com/cjvanlissa
 
 
 ## Workshop dates
-- [Thursday 9 July 2020](https://www.uu.nl/en/events/writing-a-reproducible-paper-in-r-with-worcs-9-july-2020-online) - 10:00-12:00 ([register here](https://fd21.formdesk.com/universiteitutrecht/Writing_a_reproducible_Paper_with_R_in_WORCS_07_09))  
+- [Thursday 9 July 2020](https://www.uu.nl/en/events/writing-a-reproducible-paper-in-r-with-worcs-9-july-2020-online) - 10:00-12:00
   *Office hours for installation support:*
-  - Tuesday 7 July, 11:00
   - Wednesday 8 July, 9:00
+  - Wednesday 8 July, 16:30
+
 
 ## Preparation
 Work through the [Setup vignette: Setting up your computer for WORCS](https://cjvanlissa.github.io/worcs/articles/setup.html).
