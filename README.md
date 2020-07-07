@@ -10,7 +10,7 @@ This workshop will be taught by [Caspar van Lissa](https://github.com/cjvanlissa
 
 
 ## Workshop dates
-- [Thursday 9 July 2020](https://www.uu.nl/en/events/writing-a-reproducible-paper-in-r-with-worcs-9-july-2020-online) - 10:00-12:00
+- [Thursday 9 July 2020](https://www.uu.nl/en/events/writing-a-reproducible-paper-in-r-with-worcs-9-july-2020-online) - 10:00-12:00  
   *Office hours for installation support:*
   - Wednesday 8 July, 9:00
   - Wednesday 8 July, 16:30
@@ -21,4 +21,4 @@ Work through the [Setup vignette: Setting up your computer for WORCS](https://cj
 
 
 ## Presentations
-[26 June 2020 - Lakens lab](https://bvreede.github.io/worcshop/slides/overview_lecture.html)
+[Introducing worcs](https://bvreede.github.io/worcshop/slides/overview_lecture.html)
