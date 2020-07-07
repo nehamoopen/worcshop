@@ -23,6 +23,8 @@ background-size: 82% 82%
 
 
 
+&lt;!-- Here, introduce the general principles of open science and the motivation for worcs --&gt;
+
 # Open science as a paradigm shift
 
 #### Open Science creates opportunities to make science
@@ -43,6 +45,7 @@ It is a motivating goal, but often requires new familiarities and skills:
 - new tools
 - new...
 
+&lt;!-- Here, introduce the standards to strive for --&gt;
 --
 
 #### TOP guidelines for Open Science: comprehensive, yet broad standards
@@ -94,11 +97,17 @@ It is a motivating goal, but often requires new familiarities and skills:
 * **I**nteroperable: Everything in an easy-to-adapt format
 * **R**eusability; people can use your data, your code, your materials in cloned projects
 
+&lt;!-- Here, give a conceptual platform-independent outline of WORCS.
+This requires some thought; for now, just foreshadow the worcs infograph
+to give attendees some idea of what practical issues we address.
+No detail at this stage --&gt;
+
 ---
 class:inverse, clear
 background-image: url(https://raw.githubusercontent.com/cjvanlissa/worcs/master/paper/workflow_graph/workflow.png)
 background-size: contain
 
+&lt;!-- Discuss the R implementation in the `worcs` package --&gt;
 ---
 background-image: url(images/worcs_badge.png)
 background-size: 30% 40%
@@ -129,14 +138,21 @@ background-position: right top
 ---
 background-image: url(images/worcs_viz.png)
 background-size: contain
-# A `worcs` project summary
+# Conceptual overview of a `worcs` project
+
+---
+# The tools
+
+1. Dynamic document generation
+1. Version control
+1. Dependency management
 
 ---
 background-image: url(https://rstudio.com/wp-content/uploads/2014/04/rmarkdown.png)
 background-size: 20% 38%
 background-position: right top
 
-# Dynamic document
+# Dynamic document generation
 
 - Combining narrative with code
 
@@ -152,6 +168,8 @@ background-position: right top
   _a commonly used package that combines text in Markdown with code in R_
 - `papaja` (Preparing APA Journal Articles)  
   _an R package that helps produce complete APA manuscripts from R Markdown-files._
+- `rticles`  
+  _Other common journal formats, primarily from the sciences._
 
 ---
 # R Markdown
@@ -165,6 +183,16 @@ background-position: right top
 
 ![data-analysis](images/markdown_analysis.png)
 ![citation](images/markdown_citation.png)
+
+---
+# Citation in Markdown 2
+
+* Cite references using `@` symbol
+* Keep a `.bib` file with "bibtex" citations
+  + You can export this from [Zotero](https://www.zotero.org/) or other (worse) reference managers
+* `worcs` adds a `@@` symbol for optional citations
+
+![citation](images/optional_citation.png)
 
 ---
 # Return on investment?
@@ -256,6 +284,22 @@ background-position: right top
 ]
 
 ![prereg](images/preregistration.png)
+
+---
+# What about GitHub?
+
+Cross-over between cloud hosting and social media
+
+Cool things:
+
+* Your entire project is hosted here
+* Can be public
+* People can open *Issues* or send fixes to code using *Pull requests*
+* People can *Clone* your project to check if it is reproducible, or use it as a starting point for their follow-up study
+* Great for organizing collaboration
+* Great place to find progressive collaborators
+
+
 ---
 # User investment
 
