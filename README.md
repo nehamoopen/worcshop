@@ -26,7 +26,7 @@ Work through the [Setup vignette: Setting up your computer for WORCS](https://cj
 ## Data
 For the demonstration, you can use [Allison Horst's Penguin dataset](https://github.com/allisonhorst/palmerpenguins).
 You can do this by entering the following code in the `prepare_data.R` script:
-```
+``` r
 install.packages("remotes")
 remotes::install_github("allisonhorst/palmerpenguins")
 data <- palmerpenguins::penguins
