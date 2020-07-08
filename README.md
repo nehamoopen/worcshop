@@ -24,10 +24,10 @@ Work through the [Setup vignette: Setting up your computer for WORCS](https://cj
 - Demonstration: [Setting up a worcs project](https://cjvanlissa.github.io/worcs/articles/workflow.html)
 
 ## Data
-For the demonstration, you can use [Allison Horst's Penguin dataset](https://github.com/allisonhorst/palmerpenguins).
-You can do this by entering the following code in the `prepare_data.R` script:
+For the demonstration, we will use [Allison Horst's Penguin dataset](https://github.com/allisonhorst/palmerpenguins).
+You can use this data by entering the following code in the `prepare_data.R` script:
 ``` r
-install.packages("remotes")
+# install.packages("remotes")
 remotes::install_github("allisonhorst/palmerpenguins")
 data <- palmerpenguins::penguins
 ```
