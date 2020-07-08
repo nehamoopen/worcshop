@@ -10,10 +10,9 @@ This workshop will be taught by [Caspar van Lissa](https://github.com/cjvanlissa
 
 
 ## Workshop dates
-- [Thursday 9 July 2020](https://www.uu.nl/en/events/writing-a-reproducible-paper-in-r-with-worcs-9-july-2020-online) - 10:00-12:00  
-  *Office hours for installation support:*
-  - Wednesday 8 July, 9:00
-  - Wednesday 8 July, 16:30
+- Thursday 9 July 2020 10:00-12:00 - MS Teams
+  - [Main channel](https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2I0NjEyYzUtZTU2Yy00OWMyLWJjNGMtZmZiZTk4ZGMwM2Yy%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%224aab0b2f-0067-48f0-bdb4-4341b7c079e2%22%7d)
+  - [Support channel](https://teams.microsoft.com/l/meetup-join/19%3a4c4bc5bde1974a0bbb78836073b30f14%40thread.tacv2/1594249515162?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%224aab0b2f-0067-48f0-bdb4-4341b7c079e2%22%7d)
 
 
 ## Preparation
