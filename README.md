@@ -19,5 +19,10 @@ This workshop will be taught by [Caspar van Lissa](https://github.com/cjvanlissa
 Work through the [Setup vignette: Setting up your computer for WORCS](https://cjvanlissa.github.io/worcs/articles/setup.html).
 
 
-## Presentations
-[Introducing worcs](https://bvreede.github.io/worcshop/slides/overview_lecture.html)
+## Workshop content
+- Presentation: [Introducing worcs](https://bvreede.github.io/worcshop/slides/overview_lecture.html)
+- Demonstration: [Setting up a worcs project](https://cjvanlissa.github.io/worcs/articles/workflow.html)
+
+## Further reading
+- [Read the preprint](https://psyarxiv.com/k4wde/)
+- The [worcs GitHub repo](https://github.com/cjvanlissa/worcs)
