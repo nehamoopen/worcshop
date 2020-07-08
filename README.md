@@ -23,6 +23,19 @@ Work through the [Setup vignette: Setting up your computer for WORCS](https://cj
 - Presentation: [Introducing worcs](https://bvreede.github.io/worcshop/slides/overview_lecture.html)
 - Demonstration: [Setting up a worcs project](https://cjvanlissa.github.io/worcs/articles/workflow.html)
 
+## Data
+For the demonstration, you can use [Allison Horst's Penguin dataset](https://github.com/allisonhorst/palmerpenguins).
+You can do this by entering the following code in the `prepare_data.R` script:
+```
+install.packages("remotes")
+remotes::install_github("allisonhorst/palmerpenguins")
+data <- palmerpenguins::penguins
+```
+Alternatively, you can download one of these versions of the data, and load them yourself:
+- An SPSS file ([penguins.sav](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.sav))
+- An Excel file ([penguins.xlsx](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.xlsx))
+- A CSV file ([penguins.csv](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.csv))
+
 ## Further reading
 - [Read the preprint](https://psyarxiv.com/k4wde/)
 - The [worcs GitHub repo](https://github.com/cjvanlissa/worcs)
