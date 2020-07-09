@@ -41,3 +41,4 @@ Alternatively, you can download one of these versions of the data, and load them
 - The [worcs GitHub repo](https://github.com/cjvanlissa/worcs)
 - [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet)
 - [TOP guidelines](https://www.cos.io/our-services/top-guidelines)
+- [Git User Interfaces](https://git-scm.com/downloads/guis) - recommendation by workshop participant: [GitKraken](https://www.gitkraken.com/)
