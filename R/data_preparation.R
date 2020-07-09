@@ -24,6 +24,7 @@ write_xlsx(penguins, "data/penguins.xlsx")
 # code to run with the data
 read.csv("penguins.csv")
 
-library(ggplot2)
-ggplot(penguins, aes(x = species, y = bill_length_mm)) +
-  geom_point()
+# inside the r markdown: `r nrow(data)`
+
+plot(data[,"bill_length_mm"],data[,"bill_depth_mm"],
+     xlab = "Bill length", ylab = "Bill depth")
