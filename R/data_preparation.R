@@ -20,3 +20,10 @@ if(!dir.exists("data/")){
 write_sav(penguins, "data/penguins.sav")
 write_csv(penguins, "data/penguins.csv")
 write_xlsx(penguins, "data/penguins.xlsx")
+
+# code to run with the data
+read.csv("penguins.csv")
+
+library(ggplot2)
+ggplot(penguins, aes(x = species, y = bill_length_mm)) +
+  geom_point()
