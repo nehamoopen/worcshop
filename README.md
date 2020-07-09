@@ -39,3 +39,4 @@ Alternatively, you can download one of these versions of the data, and load them
 ## Further reading
 - [Read the preprint](https://psyarxiv.com/k4wde/)
 - The [worcs GitHub repo](https://github.com/cjvanlissa/worcs)
+- [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet)
