@@ -40,5 +40,8 @@ Alternatively, you can download one of these versions of the data, and load them
 - [Read the preprint](https://psyarxiv.com/k4wde/)
 - The [worcs GitHub repo](https://github.com/cjvanlissa/worcs)
 - [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet)
+
+## Links submitted during the workshop
 - [TOP guidelines](https://www.cos.io/our-services/top-guidelines)
 - [Git User Interfaces](https://git-scm.com/downloads/guis) - recommendation by workshop participant: [GitKraken](https://www.gitkraken.com/)
+- [rrtools](https://github.com/benmarwick/rrtools), an attempt to streamline containerization in R
