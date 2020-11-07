@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>WORCS: A Workflow for Open Reproducible Code in Science</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Caspar J. van Lissa, Brandmaier, Brinkman, Lamprecht, Peikert, Struiksma, &amp; Vreede" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# WORCS: A Workflow for Open Reproducible Code in Science
+### Caspar J. van Lissa, Brandmaier, Brinkman, Lamprecht, Peikert, Struiksma, &amp; Vreede
+
+---
+
+background-image: url("https://the-turing-way.netlify.app/_images/reproducibility.jpg")
+background-size: 82% 82%
+
+
+
+&lt;!-- Here, introduce the general principles of open science and the motivation for worcs --&gt;
+
+# Open science as a paradigm shift
+
+#### Open Science creates opportunities to make science
+- more reliable, 
+- more collaborative, 
+- more inclusive
+
+.footnote-bg[
+(Artwork by Scriberia for [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction), CC-BY)]
+
+---
+# Open science as a challenge
+
+#### Where do you start?
+
+#### What tools do you need to learn?
+
+#### What workflow is right for you?
+
+---
+# Introducing WORCS
+
+### **W**orkflow for **O**pen **R**eproducible **C**ode in **S**cience
+- A standardized workflow
+    * Conceptual &amp; platform-independent, https://psyarxiv.com/k4wde
+- A "one-click" solution for R users, https://cran.r-project.org/package=worcs
+- Based on best practices (several experts contributed)
+- Compatible with existing requirements and other workflows
+- Pulling down the learning curve!
+
+![learningcurve](images/learningcurve.svg)
+
+
+---
+# Based on the TOP guidelines
+
+1. **Citation** of literature, data, materials, and methods;
+1. **Sharing** data;
+1. **Sharing** the code required to reproduce analyses;
+1. **Sharing** new research materials;
+1. **Sharing** details of the design and analysis;
+1. **Pre-registration** of studies before data collection;
+1. **Pre-registration** of the analysis plan;
+1. _Replication of published results._
+
+.footnote[[Nosek _et al._, 2015](https://osf.io/9f6gx/#!)]
+
+&lt;!-- Here, give a conceptual platform-independent outline of WORCS.
+This requires some thought; for now, just foreshadow the worcs infograph
+to give attendees some idea of what practical issues we address.
+No detail at this stage --&gt;
+
+&lt;!-- --- --&gt;
+&lt;!-- class:inverse, clear --&gt;
+&lt;!-- background-image: url(https://raw.githubusercontent.com/cjvanlissa/worcs/master/paper/workflow_graph/workflow.png) --&gt;
+&lt;!-- background-size: contain --&gt;
+
+
+---
+# The tools
+
+## 1. Dynamic document generation
+## 2. Version control
+## 3. Dependency management
+
+---
+background-image: url(https://rstudio.com/wp-content/uploads/2014/04/rmarkdown.png)
+background-size: 20% 38%
+background-position: right top
+
+# 1. Dynamic document generation
+
+- Paper consists of **text and code**
+- Results, figures, and tables automatically generated
+- Formatted as APA paper (including citations!)
+
+### Important because:
+
+- Save time from copy-pasting output and formatting paper
+- Eliminate human error in copying results;
+- When revising the paper, **all** results are automatically updated;
+- Reproducible by default: Just generate the document
+
+
+---
+# R Markdown example
+
+![rmarkdown](images/rmarkdown_example.png)
+
+---
+# R Markdown example rendered
+
+![data-analysis](images/markdown_analysis.png)
+![citation](images/markdown_citation.png)
+
+---
+# Sharing data in WORCS
+
+- Reproducibility requires open data
+- Adolescents' data may be (privacy) sensitive
+
+#### Use `open_data()`:
+
+- Original data made public as `.csv` file
+
+#### Use `closed_data()`:
+
+- Original data saved locally;
+- Simulated data made public as `.csv` file
+- A unique ID for the original data is made public (so people can check)
+
+#### Loading data `load_data()`:
+- Reads original `data.csv` if present
+- Otherwise, reads `synthetic_data.csv`
+
+
+---
+# 2. Version control (using Git)
+
+Tracks differences in (text-based) files line by line:
+![diff](images/play-changes.svg)
+
+Save tracked changes to the _repository_, and _commit_ with a descriptive message:
+
+![repo](images/git-staging-area.svg)
+.footnote-bg[
+Image credit: [Software Carpentries](https://swcarpentry.github.io/git-novice/)
+]
+
+---
+background-image: url(https://github.githubassets.com/images/modules/logos_page/Octocat.png)
+background-size: 35% 40%
+background-position: right top
+# Introducing GitHub
+.pull-left-larger[
+- `worcs` repository is pushed to [GitHub](https://github.com/);
+
+- GitHub is a "cloud backup"...
+
+- ... as well as a "social network" platform;
+
+- GitHub can be used to 'tag' specific states of the repository, e.g. a preregistration.
+]
+
+![prereg](images/preregistration.png)
+
+---
+# Important because:
+
+- Complete backup of entire project history
+    * Go back to previous version if you want
+    * Prove that you preregistered your plans and followed them
+- Easy collaboration online (even with strangers)
+    * People can copy your project and build on it
+- GitHub can be your preregistration, your research archive, supplementary materials, comments section, etc.
+- Connects to OSF.io project page
+
+---
+# 3. Dependency management
+
+- To make project reproducible, people must have access to your (exact) **software dependencies**
+    * For R-users, these are `R-packages`
+
+- Difficult trade-off:
+
+![](images/dependencytradeoff.svg)
+
+---
+background-image: url(https://rstudio.github.io/renv/reference/figures/logo.svg)
+background-size: 20% 38%
+background-position: right top
+# Dependency management in WORCS
+
+- Maintains text-based list of packages, their version,  
+  and origin (e.g., “CRAN”, “Bioconductor”, “GitHub”)
+- This list can be version-controlled with Git;
+- When a user loads the project,  
+    `renv` installs all dependencies from the list
+    
+### Important because:
+
+- Essential for reproducibility
+- Good for collaboration (everybody has same versions)
+- Your code is self-contained and will work in the future
+
+&lt;!-- With the background knowledge in mind, let's have another look at the workflow --&gt;
+---
+class:inverse, clear
+background-image: url(https://raw.githubusercontent.com/cjvanlissa/worcs/master/paper/workflow_graph/workflow.png)
+background-size: contain
+
+---
+class: center, inverse, middle
+
+# Find out more:
+
+developmentaldatascience.org/worcs
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

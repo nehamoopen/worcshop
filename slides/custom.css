@@ -1,3 +1,7 @@
+.small {
+  font-size: 50%;
+}
+
 .remark-slide-content {
   background-color: #FFFFFF;
   border-top: 80px solid #0070C0;
