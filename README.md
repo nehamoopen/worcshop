@@ -10,14 +10,36 @@ This workshop will be taught by [Caspar van Lissa](https://github.com/cjvanlissa
 
 
 ## Workshop dates
-- [Thursday 9 July 2020](https://www.uu.nl/en/events/writing-a-reproducible-paper-in-r-with-worcs-9-july-2020-online) - 10:00-12:00 ([register here](https://fd21.formdesk.com/universiteitutrecht/Writing_a_reproducible_Paper_with_R_in_WORCS_07_09))  
-  *Office hours for installation support:*
-  - Tuesday 7 July, 11:00
-  - Wednesday 8 July, 9:00
+- tbd
+
 
 ## Preparation
 Work through the [Setup vignette: Setting up your computer for WORCS](https://cjvanlissa.github.io/worcs/articles/setup.html).
 
 
-## Presentations
-[26 June 2020 - Lakens lab](https://bvreede.github.io/worcshop/slides/overview_lecture.html)
+## Workshop content
+- Presentation: [Introducing worcs](https://bvreede.github.io/worcshop/slides/overview_lecture.html)
+- Demonstration: [Setting up a worcs project](https://cjvanlissa.github.io/worcs/articles/workflow.html)
+
+## Data
+For the demonstration, we will use [Allison Horst's Penguin dataset](https://github.com/allisonhorst/palmerpenguins).
+You can use this data by entering the following code in the `prepare_data.R` script:
+``` r
+install.packages("remotes")
+remotes::install_github("allisonhorst/palmerpenguins")
+data <- palmerpenguins::penguins
+```
+Alternatively, you can download one of these versions of the data, and load them yourself:
+- An SPSS file ([penguins.sav](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.sav))
+- An Excel file ([penguins.xlsx](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.xlsx))
+- A CSV file ([penguins.csv](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.csv))
+
+## Further reading
+- [Read the preprint](https://psyarxiv.com/k4wde/)
+- The [worcs GitHub repo](https://github.com/cjvanlissa/worcs)
+- [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet)
+
+## Links submitted during the workshop
+- [TOP guidelines](https://www.cos.io/our-services/top-guidelines)
+- [Git User Interfaces](https://git-scm.com/downloads/guis) - recommendation by workshop participant: [GitKraken](https://www.gitkraken.com/)
+- [rrtools](https://github.com/benmarwick/rrtools), an attempt to streamline containerization in R

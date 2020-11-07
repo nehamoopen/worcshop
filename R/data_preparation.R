@@ -20,3 +20,11 @@ if(!dir.exists("data/")){
 write_sav(penguins, "data/penguins.sav")
 write_csv(penguins, "data/penguins.csv")
 write_xlsx(penguins, "data/penguins.xlsx")
+
+# code to run with the data
+read.csv("penguins.csv")
+
+# inside the r markdown: `r nrow(data)`
+
+plot(data[,"bill_length_mm"],data[,"bill_depth_mm"],
+     xlab = "Bill length", ylab = "Bill depth")
