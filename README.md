@@ -28,19 +28,17 @@ your data (safely\!), and the submission of a pre-print.
 
 Anyone who would like to get started with an open and reproducible
 workflow, without dealing with a mountain of new tools and platforms.
-The workflow is written in R, but you do not need to have prior
-programming experience to join this workshop. Having the motivation to
-step out of your comfort zone — and into a new one — is the most
-important prerequisite.
+The workshop uses R, but prior experience is not required. Having the
+motivation to step out of your comfort zone — and into a new one — is
+the most important prerequisite.
 
 <!--## Workshop dates
 - tbd-->
 
 ## Desired outcome
 
-The instructors will give an overview of the workflow and introduce its
-practical implementation, so that attendees will be able to get started
-on their own reproducible project by the end of the workshop.
+Attendees will be able to get started on their own open, reproducible
+project by the end of the workshop.
 
 ## Preparation
 
