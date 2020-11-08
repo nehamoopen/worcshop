@@ -34,8 +34,11 @@ Work through the [Setup vignette: Setting up your computer for WORCS](https://cj
 ```{r, echo = FALSE, results= "asis"}
 f <- list.files("docs/", pattern = ".html")
 f <- f[!f == "index.html"]
-cat(paste0("* [", gsub("\\.html$", "", f), "](",
-       paste0("https://cjvanlissa.github.io/worcshop/", f), ")", collapse = "\n"))
+tmp <- file.info(file.path("docs", f))
+print_f <- paste0(gsub("\\.html$", " (", f), format(tmp$mtime, "%b %y"), ")")
+print_f <- print_f[order(tmp$mtime, decreasing = TRUE)]
+cat(paste0("* [", print_f, "](",
+       paste0("https://cjvanlissa.github.io/worcshop/", f[order(tmp$mtime, decreasing = TRUE)]), ")", collapse = "\n"))
 ```
 
 <!--[Introducing worcs](https://bvreede.github.io/worcshop/slides/overview_lecture.html)-->

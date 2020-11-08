@@ -49,9 +49,12 @@ RStudio](https://cjvanlissa.github.io/worcs/articles/workflow.html)
 
 ### Presentations (by event):
 
-  - [eara2020](https://cjvanlissa.github.io/worcshop/eara2020.html)
-  - [eur\_2020](https://cjvanlissa.github.io/worcshop/eur_2020.html)
-  - [overview\_lecture](https://cjvanlissa.github.io/worcshop/overview_lecture.html)
+  - [overview\_lecture
+    (Nov 20)](https://cjvanlissa.github.io/worcshop/overview_lecture.html)
+  - [eur\_2020
+    (Oct 20)](https://cjvanlissa.github.io/worcshop/eur_2020.html)
+  - [eara2020
+    (Aug 20)](https://cjvanlissa.github.io/worcshop/eara2020.html)
 
 <!--[Introducing worcs](https://bvreede.github.io/worcshop/slides/overview_lecture.html)-->
 
