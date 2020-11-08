@@ -1,0 +1,16 @@
+WORCS demo notes
+
+- New repo "demo_mpib"
+- copy https:// link
+- New Project RStudio
+- License + readme + prereg + manuscript + renv
+- Edit preregistration
+- Save repo
+- git_update()
+- Make prereg tag
+- prepare_data.r
+- open_data() or closed_data()
+- load_data()
+- cite_essential()
+- check_worcs()
++ worcs::checklist
