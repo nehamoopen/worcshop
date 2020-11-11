@@ -51,8 +51,8 @@ project by the end of the workshop.
         file](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.csv)
       - [SPSS
         file](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.sav)
-      - \[Excel
-        file\]\[penguins.xlsx\](<https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.xlsx>)
+      - [Excel
+        file](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.xlsx)
 
 ## Worcshop slides and documentation
 
@@ -63,6 +63,8 @@ RStudio](https://cjvanlissa.github.io/worcs/articles/workflow.html)
 
 ### Presentations (by event):
 
+  - [MPIB\_2020
+    (Nov 20)](https://cjvanlissa.github.io/worcshop/MPIB_2020.html)
   - [overview\_lecture
     (Nov 20)](https://cjvanlissa.github.io/worcshop/overview_lecture.html)
   - [eur\_2020

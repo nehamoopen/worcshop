@@ -29,7 +29,7 @@ Attendees will be able to get started on their own open, reproducible project by
 1. Download [Allison Horst's Penguin dataset](https://github.com/allisonhorst/palmerpenguins):
     * [CSV file](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.csv)
     * [SPSS file](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.sav)
-    * [Excel file][penguins.xlsx](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.xlsx)
+    * [Excel file](https://raw.githubusercontent.com/bvreede/worcshop/master/data/penguins.xlsx)
 
 ## Worcshop slides and documentation
 
