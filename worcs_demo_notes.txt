@@ -1,5 +1,6 @@
 WORCS demo notes
 
+- remotes::install_github("cjvanlissa/worcs", ref = "ds_revision")
 - New repo "demo_mpib"
 - copy https:// link
 - New Project RStudio

@@ -1,0 +1,452 @@
+---
+title: "WORCS: A Workflow for Open Reproducible Code in Science"
+author: "Caspar J. Van Lissa, Brandmaier, Brinkman, Lamprecht, Peikert, Struiksma, & Vreede (2021), *Data Science*, DOI: [10.3233/DS-210031](https://content.iospress.com/articles/data-science/ds210031)"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, 'custom.css']
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+<!-- Here, introduce the general principles of open science and the motivation for worcs -->
+
+# Defining Open Science
+
+"Open science is just good science" (Jonathan Tennant, 2018)
+
+* **Conceptually**, transparency / replicability are intrinsic to scientific method
+
+Formal definitions:
+
+* TOP guidelines (Nosek et al., 2015)
+* FAIR principles (Wilkinson et al., 2016)
+---
+
+# Meeting TOP guidelines...
+
+Relevant to openness and reproducibility:
+
+1. **Citation** of literature, data, materials, and methods;
+2. **Sharing** data;
+3. **Sharing** the code required to reproduce analyses;
+4. **Sharing** new research materials;
+5. **Sharing** details of the design and analysis;
+6. **Pre-registration** of studies before data collection;
+7. **Pre-registration** of the analysis plan;
+
+ Relevant to replication:
+
+8. _Replication of published results._
+
+.footnote[[Nosek _et al._, 2015](https://osf.io/9f6gx/#!)]
+---
+
+## ...in a FAIR manner
+
+* **F**indable
+    + Through standardized repositories or cross-repository search engines
+    + With Digital Object Identifier (DOI)
+* **A**ccessible online for humans and machines
+    + Long-term storage
+* **I**nteroperable
+    + Open file type
+* **R**eusability
+    + License data, code, and materials for reuse
+
+.footnote[Wilkinson et al., 2016]
+---
+
+# Why open science?
+
+Sterling, 1959:
+
+![](images/sterling_1959.png)
+---
+
+# Why open science?
+
+* Scientiﬁc fraud (Levelt, Noort, & Drenth, 2012)
+* Questionable research practices (John, Loewenstein, & Prelec, 2012)
+* P-hacking / p-ritual (Gigerenzer, 2018)
+* Replication crisis (Shrout & Rodgers, 2018)
+
+#### So: Open science as punishment for bad science?
+---
+
+background-image: url("https://the-turing-way.netlify.app/_images/reproducibility.jpg")
+background-size: 82% 82%
+
+# Open science as a paradigm shift
+
+#### Open Science creates opportunities to make science more
+- reliable, 
+- cumulative,
+- collaborative, 
+- inclusive
+
+.footnote-bg[
+(Artwork by Scriberia for [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction), CC-BY)]
+
+---
+
+# When the stakes are high
+
+![](images/nature.png)
+---
+
+# When the stakes are high
+
+![](images/retractions_1.png)
+---
+
+# When the stakes are high
+
+![](images/nrc_2020.png)
+---
+
+# Open science as a challenge
+
+#### Where do you start?
+
+#### What tools do you need to learn?
+
+#### What workflow is right for you?
+
+---
+# Introducing WORCS
+
+### **W**orkflow for **O**pen **R**eproducible **C**ode in **S**cience
+- Standardized workflow
+- Low threshold, high ceiling
+- Conceptual platform-independent principles: https://psyarxiv.com/k4wde
+- "One-click" solution for R-users: https://cran.r-project.org/package=worcs
+- Defaults based on best practices (several experts contributed)
+- Compatible with journal/university requirements and other workflows
+- Pulling down the learning curve!
+
+![learningcurve](images/learningcurve.svg)
+
+
+---
+
+
+# The tools
+
+## 1. Dynamic document generation
+## 2. Version control
+## 3. Dependency management
+
+---
+background-image: url(https://rstudio.com/wp-content/uploads/2014/04/rmarkdown.png)
+background-size: 20% 38%
+background-position: right top
+
+# 1. Dynamic document generation
+
+- Paper consists of **text and code**
+- Results, figures, and tables automatically generated
+- Formatted as APA paper (including citations!)
+
+### Important because:
+
+- Save time from copy-pasting output and formatting paper
+- Eliminate human error in copying results;
+- When revising the paper, **all** results are automatically updated;
+- Reproducible by default: Just generate the document
+
+
+---
+# R Markdown example
+
+![rmarkdown](images/rmarkdown_example.png)
+
+---
+# R Markdown example rendered
+
+![data-analysis](images/markdown_analysis.png)
+![citation](images/markdown_citation.png)
+
+---
+# 2. Version control (using Git)
+
+### Why version control?
+
+.pull-left[
+
+- NO MORE manuscript_final_final_SERIOUSLYFINAL.doc
+
+- "Track Changes" on steroids: record entire project history
+
+- If something breaks, you can figure out what happened.
+
+- Facilitates collaboration and experimentation!
+
+]
+
+.pull-right[
+![final](http://www.phdcomics.com/comics/archive/phd101212s.gif)
+]
+---
+
+# 2. Version control (using Git)
+
+Tracks changes to (text-based) files line by line:
+
+```{r, out.width="50%", echo = FALSE}
+knitr::include_graphics("images/play-changes.svg")
+```
+
+* _add_ files to your repository
+* _commit_ changes to these files
+* _push_ all commits to remote repository (private backup or public online supplement)
+
+```{r, out.width="50%", echo = FALSE}
+knitr::include_graphics("images/git-staging-area.svg")
+```
+
+One command in `worcs`: `git_update("Describe your changes")`
+.footnote-bg[
+Image credit: [Software Carpentries](https://swcarpentry.github.io/git-novice/)
+]
+
+---
+background-image: url(https://github.githubassets.com/images/modules/logos_page/Octocat.png)
+background-size: 35% 40%
+background-position: right top
+# Introducing GitHub
+.pull-left-larger[
+- `worcs` repository is backed up in a remote repository like [GitHub](https://github.com/);
+
+- GitHub is a **"cloud backup"** with **"social networking"** features
+    + Clone other people's repository to reproduce or build upon them
+    + Open Issues with questions or comments about the work
+    + Send suggested changes as a "Pull request"
+
+- GitHub can be used to 'tag' specific states of the repository, e.g. a preregistration.
+]
+
+![prereg](images/preregistration.png)
+
+---
+# Important because:
+
+- Complete backup of entire project history
+    * Go back to previous version if you want
+    * Try new things, don't worry about losing work
+    * Prove that you preregistered your plans and followed them
+- Easy collaboration online (even with strangers)
+    * People can copy your project and build on it
+- GitHub can be your preregistration, your research archive, supplementary materials, comments section, etc.
+- Connects to OSF.io project page
+    * Improves **F**indability
+    * Get DOI for project and/or specific resources
+- Connects to Zenodo
+    * Get DOI for project and/or specific resources
+    * Store project snapshot
+
+---
+# 3. Dependency management
+
+- To make project reproducible, people must have access to your (exact) **software dependencies**
+    * For R-users, these are `R-packages`
+
+- Difficult trade-off:
+
+![](images/dependencytradeoff.svg)
+
+---
+background-image: url(https://rstudio.github.io/renv/reference/figures/logo.svg)
+background-size: 20% 38%
+background-position: right top
+# Dependency management in WORCS
+
+- Maintains text-based list of packages, their version,  
+  and origin (e.g., “CRAN”, “Bioconductor”, “GitHub”)
+- This list can be version-controlled with Git;
+- When a user loads the project,  
+    `renv` installs all dependencies from the list
+    
+### Important because:
+
+- Essential for reproducibility
+- Good for collaboration (everybody has same versions)
+- Nice to your "future self": Your code will work in the future
+
+<!-- With the background knowledge in mind, let's have another look at the workflow -->
+---
+# Unique features in `worcs`
+
+* RStudio template
+* Easy GitHub integration
+    - Add URL during project creation
+    - `git_update("Commit message")`
+* Manuscript and preregistration templates
+    - From `rticles`, `papaja`, and `prereg`
+    - Original templates for secondary- and longitudinal data
+* Solutions for data sharing
+* Cite `@essential` and `@@nonessential`
+* WORCS checklist and badge
+
+---
+
+# Sharing data in WORCS
+
+- Reproducibility requires open data
+- Some data may be (privacy) sensitive
+    * E.g., children's data, veterans' data, patient data
+
+#### Use `open_data()`:
+
+- Original data made public
+- Default is a `.csv` (text based, human / machine readable)
+- Other save / load functions can be used
+
+#### Use `closed_data()`:
+
+- Original data saved locally;
+- Synthetic data created using `synthetic()`
+- Synthetic data made public (default: `.csv`)
+- Unique ID of original data made public (so people can audit your work)
+---
+
+
+# Sharing data in WORCS
+
+#### Loading data `load_data()`:
+
+- **If** original data are present, load them...
+- ...**Else**, load synthetic data
+- Scripts can thus ALWAYS be reproduced
+- People can create a working script using synthetic data, and send it to you to run on original data
+- Load function recorded in `.worcs` file; default `read.csv()`
+
+---
+
+# For non-R-users
+
+* WORCS-paper addresses the **conceptual** workflow
+* Covers issues/decisions you have to consider for Open Science, regardless of software
+* We are looking for a collaborator to implement the workflow for `python` / `jupyter`
+
+* WORCS is a good starting point for new R-users
+    + We have a Setup Tutorial to make sure you correctly install R etc.
+    + Tricky issues (like project management and using Git) are ~automatic when using the WORCS template
+* Learn good habits from the start; don't reinvent the wheel
+    
+  
+
+---
+
+
+class:inverse, clear
+background-image: url(https://raw.githubusercontent.com/cjvanlissa/worcs/master/paper/workflow_graph/workflow.png)
+background-size: contain
+
+---
+
+class: center, inverse, middle
+# Find out more:
+
+<div style="background-color:#ffffff; text-align:center; vertical-align: middle; padding:20px 47px;"> <a href="http://developmentaldatascience.org/worcs">developmentaldatascience.org/worcs</a> </div>
+---
+
+# Open Science in Child Development
+
+["(SRCD) regards scientific integrity, transparency, and openness as essential for the conduct of research and its application to practice and policy"](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
+
+* Scientific integrity includes core values of openness, objectivity, fairness, honesty, accountability and stewardship
+
+* Transparency: clear, accurate, and complete reporting of all components of scientific research
+
+* Openness: sharing of scientific resources (methods, measures, and data)
+
+* Minimize potential harm to contributing participants, researchers, and the public
+    + Children's data are often highly privacy sensitive
+    + *<div style="color:#ff0000">"need to protect researchers from professional harm that can occur when requests for scientific transparency and openness veer into attacks on the integrity of researchers themselves"</div>*
+---
+
+# Open Science and APA
+
+[![](images/apa.png)](https://www.apa.org/pubs/journals/resources/open-science)
+
+---
+
+
+# Developmental research: data
+
+*	Children’s data are often privacy sensitive
+    + Grounds to eschew all open science practices?
+    + WORCS can create synthetic data (`closed_data()` or `synthetic()`)
+    + Computational reproducibility can be verified
+    + Unique ID for original data so analysis can be audited
+* Data are a valuable commodity; researchers should control access
+    + Restricted access / conditional access is possible
+    + Who owns the rights to data?
+    + What are university / funder requirements regarding open data?
+---
+
+# Developmental research: Preregistration
+
+Weston et al., 2019
+
+* Secondary data underemphasized in open science
+* Analysis can be either exploratory or confirmatory 
+* Strong risk (and incentives) for undisclosed exploration and HARKing
+    + Leads to spurious / unreliable findings
+* Transparency improves reliability of results
+
+Solutions:
+
+* Registering analyses before data are accessed / analyzed
+* Disclose prior (indirect) exposure
+* Use cross-validation / holdout samples
+* Sensitivity analyses (what happens to results if...)
+---
+
+# Preregistration templates
+
+`worcs::add_preregistration("Secondary")`
+
+> Mertens, G., & Krypotos, A. M. (2019). Preregistration of analyses of
+preexisting data. Psychologica Belgica, 59(1), 338-352. doi: 10.5334/pb.493
+
+`worcs::add_preregistration("PSS")`
+
+> Krypotos, A. M., Klugkist, I., Mertens, G., & Engelhard, I. M. (2019).
+A step-by-step guide on preregistration and effective data sharing for
+psychopathology research. Journal of Abnormal Psychology, 128(6), 517-537.
+https://psycnet.apa.org/doi/10.1037/abn0000424
+---
+
+# Perspective from the Editor
+
+Child Development Editor-in-Chief prof. dr. Glenn Roisman:
+
+* Move to a policy more consistent with the APA ethics code
+    + Condition acceptance on availability of data, code, or materials post-publication
+    + Supporting diversity and inclusion (not creating unfair burdens for lower resourced scientists)
+* Incentivization [through] P&T/hiring decisions (outcomes with real life consequences)
+* Open science has a lot of fronts/distinct initiatives, which makes adoption by journals uneven 
+    + CD is focusing on pre-reg and RRs
+    + open reviews and open journals?
+* Few journal resources to check final reports against pre-registrations, even when these exist
+---
+
+# CD open access / preprints
+
+* Open access fee ~3300 USD 
+* Preprint allowed [(check Sherpa Romeo)](https://v2.sherpa.ac.uk/romeo/)
+    + https://psyarxiv.com/
+    + https://osf.io
+
+```{r, out.width = "70%", echo = FALSE}
+knitr::include_graphics("images/sherparomeo.png")
+```
+
