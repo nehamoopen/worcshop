@@ -1,6 +1,6 @@
 ---
 title: "WORCS: A Workflow for Open Reproducible Code in Science"
-author: "Caspar J. van Lissa, Brandmaier, Brinkman, Lamprecht, Peikert, Struiksma, & Vreede"
+author: "Caspar van Lissa, Andreas Markus Brandmaier, Anna-Lena Lamprecht, Aaron Peikert, Marijn Struiksma, Barbara Vreede <br /> <br /> _presented by_ Neha Moopen"
 output:
   xaringan::moon_reader:
     css: [default, metropolis, metropolis-fonts, 'custom.css']
@@ -19,15 +19,16 @@ options(htmltools.dir.version = FALSE)
 
 <!-- Here, introduce the general principles of open science and the motivation for worcs -->
 
-# Open science as a paradigm shift
+# Open science as a paradigm shift 
 
-#### Open Science creates opportunities to make science
-- more reliable, 
-- more collaborative, 
-- more inclusive
+#### Open Science creates opportunities to make science more
+- reliable,
+- cumulative,
+- collaborative, 
+- inclusive
 
 .footnote-bg[
-(Artwork by Scriberia for [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction), CC-BY)]
+_This image was created by [Scriberia](http://www.scriberia.co.uk/) for [The Turing Way community](https://the-turing-way.netlify.app/welcome) and is used under a CC-BY licence._]
 
 ---
 # Open science as a challenge
@@ -43,7 +44,7 @@ options(htmltools.dir.version = FALSE)
 
 ### **W**orkflow for **O**pen **R**eproducible **C**ode in **S**cience
 - A standardized workflow
-    * Conceptual & platform-independent, https://psyarxiv.com/k4wde
+    * Conceptual & platform-independent, https://doi.org/10.3233/DS-210031 
 - A "one-click" solution for R users, https://cran.r-project.org/package=worcs
 - Based on best practices (several experts contributed)
 - Compatible with existing requirements and other workflows
@@ -93,7 +94,7 @@ background-position: right top
 
 - Paper consists of **text and code**
 - Results, figures, and tables automatically generated
-- Formatted as APA paper (including citations!)
+- Formatted according to journal requirements (including citations!)
 
 ### Important because:
 
@@ -171,10 +172,36 @@ background-position: right top
 - Complete backup of entire project history
     * Go back to previous version if you want
     * Prove that you preregistered your plans and followed them
+    
+```{r, echo=FALSE, out.width="70%", out.height="50%", fig.align = 'center'}
+knitr::include_graphics("images/project-history.jpg")
+```
+
+.footnote-bg[
+_This image was created by [Scriberia](http://www.scriberia.co.uk/) for [The Turing Way community](https://the-turing-way.netlify.app/welcome) and is used under a CC-BY licence._]
+
+---
+# Important because:
+
 - Easy collaboration online (even with strangers)
     * People can copy your project and build on it
+
+```{r, echo=FALSE, out.width="70%", out.height="50%", fig.align = 'center'}
+knitr::include_graphics("images/first-pull-request.png")
+```
+
+.footnote-bg[
+_This image was created by [Scriberia](http://www.scriberia.co.uk/) for [The Turing Way community](https://the-turing-way.netlify.app/welcome) and is used under a CC-BY licence._]
+
+---
+# Important because:
+
 - GitHub can be your preregistration, your research archive, supplementary materials, comments section, etc.
 - Connects to OSF.io project page
+
+```{r, echo=FALSE, out.width="50%", out.height="50%", fig.align = 'center'}
+knitr::include_graphics("images/worcs-github-osf.png")
+```
 
 ---
 # 3. Dependency management
@@ -216,3 +243,16 @@ class: center, inverse, middle
 # Find out more:
 
 developmentaldatascience.org/worcs
+
+---
+# Learn more:
+
+This presentation was brought to you by [Research Data Management Support](https://www.uu.nl/en/research/research-data-management).
+
+- Workshops on [_Writing A Reproducible Manuscript in R With WORCS_](https://www.uu.nl/en/events/writing-a-reproducible-paper-in-r-with-worcs-1)
+- [Walk-In Hours for Research Data & Software](https://www.uu.nl/en/research/research-data-management/walk-in-hours-workshops/walk-in-hours-research-data-software)
+
+```{r, echo=FALSE, out.width="50%", out.height="50%", fig.align = 'center'}
+knitr::include_graphics("images/uu-rdm-support.jpg")
+```
+
