@@ -71,6 +71,7 @@ RStudio](https://cjvanlissa.github.io/worcs/articles/workflow.html)
     (Oct 20)](https://cjvanlissa.github.io/worcshop/eur_2020.html)
   - [eara2020
     (Aug 20)](https://cjvanlissa.github.io/worcshop/eara2020.html)
+  - [Data Science Data 2022 @UtrechtUniversity](https://nehamoopen.github.io/worcshop/dsd2022.html)
 
 <!--[Introducing worcs](https://bvreede.github.io/worcshop/slides/overview_lecture.html)-->
 
